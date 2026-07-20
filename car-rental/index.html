@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Costco Travel: Car Rental Mobile Booking Redesign · Adi</title>
+  <script type="module" src="/src/pages/car-rental.ts"></script>
+</head>
+
+<body>
+
+  <div id="site-nav"></div>
+
+  <div class="page">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="tag-row gsap-fade">
+        <span class="tag">Mobile UX</span>
+        <span class="tag">Ecommerce</span>
+        <span class="tag">Travel</span>
+      </div>
+      <h1 class="gsap-fade">Costco Travel: Car Rental Mobile Booking Redesign</h1>
+      <p class="hero-sub gsap-fade">
+        Costco Travel's car rental flow was losing mobile bookings at nearly half the rate of desktop.
+        <strong>I led the redesign that closed that gap and drove a 55.93% lift in mobile conversion.</strong>
+      </p>
+      <div class="tag-row gsap-fade">
+        <span class="tag neutral">Lead UX Designer</span>
+        <span class="tag neutral">Q2 to Q3 2022 · 14 weeks</span>
+        <span class="tag neutral">Mobile Web</span>
+        <span class="tag neutral">Cross functional team of 7</span>
+      </div>
+      <div class="hero-img gsap-fade">
+        <img src="/src/assets/crbe/carhero2.jpg" alt="Final car results screen showing Sort and Filter button" />
+      </div>
+    </section>
+
+    <!-- STAT STRIP -->
+    <div class="stat-strip gsap-fade">
+      <div class="stat-strip-label">Where things stand today</div>
+      <div class="stat-grid">
+        <div class="stat-item">
+          <div class="stat-num">+55.93%</div>
+          <div class="stat-desc">increase in mobile booking conversion rate since launch</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">100%</div>
+          <div class="stat-desc">task success rate across all usability test scenarios</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">-38%</div>
+          <div class="stat-desc">reduction in average time to select a car</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 01: THE PROBLEM -->
+    <section class="section gsap-fade">
+      <span class="eyebrow">01: The Problem</span>
+      <h2>A revenue critical product with a broken mobile experience</h2>
+      <p style="max-width: 62ch; margin-bottom: 32px;">Rental cars are 53% of Costco Travel's revenue. Mobile conversion at 27% versus desktop's 70% was not just a UX problem. It was a revenue problem.</p>
+      <div class="two-col">
+        <div>
+          <img src="/src/assets/crbe/Old experience.png" alt="Old booking experience" style="border: 1px solid var(--color-border);" />
+          <p class="img-caption">Before: original flow</p>
+        </div>
+        <div>
+          <img src="/src/assets/crbe/new experience.gif" alt="New booking experience" style="border: 1px solid var(--color-border);" />
+          <p class="img-caption">After: redesigned flow</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02: MY ROLE -->
+    <section class="section gsap-fade">
+      <span class="eyebrow">02: My Role And How I Worked</span>
+      <h2>I ran baseline usability testing with 10 users to find the pain points</h2>
+      <ul class="role-list">
+        <li>
+          <span class="role-label">What I owned</span>
+          <span>The end to end redesign, from the baseline usability study through the final Sort and Filter architecture and handoff to engineering.</span>
+        </li>
+        <li>
+          <span class="role-label">What I delegated</span>
+          <span>Component documentation and annotation, which I handed to a junior designer I was mentoring on this project, with my review before it reached engineering.</span>
+        </li>
+        <li>
+          <span class="role-label">Who I worked with</span>
+          <span>A team of 7: two engineers, a product manager, a researcher, a data analyst who ran the A/B test, and the junior designer I mentored.</span>
+        </li>
+      </ul>
+      <div class="research-stat">
+        <div class="rs-num">7/10</div>
+        <div class="rs-desc">users did not realise they were selecting a drop off location. They thought they were still on the pick up screen.</div>
+      </div>
+      <div class="research-stat">
+        <div class="rs-num">10/10</div>
+        <div class="rs-desc">users expected more filter options than the existing agency only dropdown provided.</div>
+      </div>
+      <div class="research-stat">
+        <div class="rs-num">60%</div>
+        <div class="rs-desc">overall task fail rate across all scenarios in baseline testing.</div>
+      </div>
+    </section>
+
+    <!-- 03: PROCESS -->
+    <section class="section gsap-fade">
+      <span class="eyebrow">03: How I Ran It</span>
+      <div class="process-wrap">
+        <div class="process-row cols-5">
+          <div class="pstep">
+            <div class="pstep-num">01</div>
+            <div class="pstep-name">Discovery</div>
+            <div class="pstep-detail">Data audit, heuristic eval, stakeholder interviews</div>
+          </div>
+          <div class="pstep">
+            <div class="pstep-num">02</div>
+            <div class="pstep-name">Baseline test</div>
+            <div class="pstep-detail">moderated usability study with 10 participants</div>
+          </div>
+          <div class="pstep">
+            <div class="pstep-num">03</div>
+            <div class="pstep-name">Concept</div>
+            <div class="pstep-detail">Wireframes, 3 directions, engineering review</div>
+          </div>
+          <div class="pstep">
+            <div class="pstep-num">04</div>
+            <div class="pstep-name">Iteration</div>
+            <div class="pstep-detail">High fidelity designs, 2 rounds of usability testing</div>
+          </div>
+          <div class="pstep">
+            <div class="pstep-num">05</div>
+            <div class="pstep-name">Handoff & measure</div>
+            <div class="pstep-detail">Figma annotations, A/B test, success metrics</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04: ITERATION -->
+    <section class="section gsap-fade">
+      <span class="eyebrow">04: What Changed and Why</span>
+      <h2>One interaction change gave users the confidence to trust the filter</h2>
+      <p style="max-width: 62ch; margin-bottom: 24px;">Most of the filter system shipped close to where it started. But one thing testing made clear: users had no way of knowing if their filter selections had actually been applied to the results.</p>
+
+      <div class="iter-grid">
+        <div class="iter-card iter-v1">
+          <div class="iter-label">V1: Initial design</div>
+          <div class="iter-title">Sort & Filter button with no change state</div>
+          <p class="iter-body">The button looked the same whether zero or five filters were active. Users tapped it, made selections, and then second guessed themselves. They could not tell if their changes had been applied to the results at all.</p>
+        </div>
+        <div class="iter-arrow">→</div>
+        <div class="iter-card iter-v2">
+          <div class="iter-label">V2: After testing</div>
+          <div class="iter-title">Active state showing filter count</div>
+          <p class="iter-body">When filters are applied, the button shifts to a dark blue state and displays the number of active filters. Users immediately understood their selections were live. Task success on the filter scenario went from 5/10 to 10/10.</p>
+        </div>
+      </div>
+
+      <div class="two-col" style="margin-bottom: 24px;">
+        <div>
+          <img src="/src/assets/crbe/V1.png" alt="V1: Sort and Filter button with no change state" style="border: 1px solid var(--color-border);" />
+          <p class="img-caption">V1: button looks the same when filters are active</p>
+        </div>
+        <div>
+          <img src="/src/assets/crbe/V2.png" alt="V2: Sort and Filter button with dark blue active state showing filter count" style="border: 1px solid var(--color-border);" />
+          <p class="img-caption">V2: filter count visible on button</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 05: OUTCOMES -->
+    <section class="section gsap-fade" style="border-bottom: none;">
+      <span class="eyebrow">05: Outcomes</span>
+      <div class="outcome-section">
+        <h2>The redesign closed the mobile gap and held up under testing</h2>
+        <p style="max-width: 560px;">Validated via A/B test at 95% confidence, and a moderated usability study with 10 Costco members.</p>
+        <div class="outcome-grid">
+          <div class="outcome-card">
+            <div class="outcome-num">+55.93%</div>
+            <div class="outcome-desc">increase in mobile booking conversion rate</div>
+          </div>
+          <div class="outcome-card">
+            <div class="outcome-num">4.7 / 5</div>
+            <div class="outcome-desc">ease of use score (SUS adapted, post launch)</div>
+          </div>
+          <div class="outcome-card">
+            <div class="outcome-num">100%</div>
+            <div class="outcome-desc">task success rate across all usability test scenarios</div>
+          </div>
+          <div class="outcome-card">
+            <div class="outcome-num">-38%</div>
+            <div class="outcome-desc">reduction in average time to select a car (4m 12s down to 2m 36s)</div>
+          </div>
+          <div class="outcome-card">
+            <div class="outcome-num">-62%</div>
+            <div class="outcome-desc">drop in user reported confusion on location selection</div>
+          </div>
+          <div class="outcome-card">
+            <div class="outcome-num">0</div>
+            <div class="outcome-desc">critical usability errors in final test round (down from 6)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06: LEARNINGS -->
+    <section class="section gsap-fade" style="border-bottom: none;">
+      <span class="eyebrow">06: What I Learned</span>
+      <h2>What I learned and what I would carry into any team</h2>
+      <div class="learn-grid">
+        <div class="learn-card">
+          <div class="learn-title">Constraints are design inputs, not blockers</div>
+          <div class="learn-body">The API limitation forced a better, more accessible interaction. Apply on release is now a reusable pattern across the product. Screen reader users benefit more from it than from a live drag update.</div>
+        </div>
+        <div class="learn-card">
+          <div class="learn-title">Data wins stakeholder buy in</div>
+          <div class="learn-body">"7 of 10 users failed" changed how leadership engaged with the design process more than any visual or prototype. Framing research findings in failure rate language made the problem feel urgent and fixable.</div>
+        </div>
+        <div class="learn-card">
+          <div class="learn-title">Ask what the design needs to support in 18 months, not just this sprint</div>
+          <div class="learn-body">The Sort and Filter architecture I built is intentionally extensible. Adding EV filters or accessibility options requires no structural redesign, because I asked what else this would need to do before locking the component structure.</div>
+        </div>
+        <div class="learn-card">
+          <div class="learn-title">Writing clearly for engineers is as important as designing for users</div>
+          <div class="learn-body">I mentored a junior designer on component annotation during this project. Well documented Figma files cut dev questions by an estimated 30%. A well annotated handoff is design leadership, not admin work.</div>
+        </div>
+      </div>
+      <p class="metric-note" style="margin-top: 32px;">A full case study including detailed design decisions and wireframes is available as a PDF upon request.</p>
+      <div class="next-wrap">
+        <a href="/design-system-case-study/" class="next-btn">Next project →</a>
+      </div>
+    </section>
+
+  </div>
+
+  <div id="site-footer"></div>
+
+</body>
+</html>

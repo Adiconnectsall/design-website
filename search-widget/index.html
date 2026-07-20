@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search Widget Redesign · Adi</title>
+  <script type="module" src="/src/pages/search-widget.ts"></script>
+</head>
+
+<body>
+
+  <div id="site-nav"></div>
+
+  <div class="page">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="tag-row gsap-fade">
+        <span class="tag">Search & Discovery</span>
+        <span class="tag">A/B Testing</span>
+      </div>
+      <h1 class="gsap-fade">Search Widget Redesign</h1>
+      <p class="hero-sub gsap-fade">
+        The Costco Travel search widget is the entry point for nearly every booking on the site. When Hotel Only search and Dynamic Packages launched inside it, the search volume never showed up.
+        <strong>I led the research and the design work that found out why, then rebuilt the widget one tested decision at a time.</strong>
+      </p>
+      <div class="tag-row gsap-fade">
+        <span class="tag neutral">Lead Product Designer</span>
+        <span class="tag neutral">Desktop + Mobile Web</span>
+        <span class="tag neutral">Costco Travel</span>
+        <span class="tag neutral">Researcher + Engineering Partner</span>
+      </div>
+
+      <div class="hero-img gsap-fade">
+        <img src="/src/assets/Search widget/hero4.png" alt="Redesigned search widget, current state" />
+      </div>
+      <p class="img-caption gsap-fade">This is the final design, live today on <a href="https://www.costcotravel.com/" target="_blank" rel="noopener">CostcoTravel.com</a>.</p>
+    </section>
+
+    <!-- STAT STRIP -->
+    <div class="stat-strip gsap-fade">
+      <div class="stat-strip-label">Where things stand today</div>
+      <div class="stat-grid">
+        <div class="stat-item">
+          <div class="stat-num">2M</div>
+          <div class="stat-desc">members browse Costco Travel every week, most of them starting right at this widget</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">+8%</div>
+          <div class="stat-desc">overall search volume from the widget since the first shipped iteration</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">6</div>
+          <div class="stat-desc">A/B tested iterations shipped so far, each one built on the last</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 01: THE PROBLEM -->
+    <section class="section gsap-fade">
+      <span class="eyebrow">01: The Problem</span>
+      <h2>Search volume for Hotel Only search and Dynamic Packages landed under projection, and no one could point to a specific cause</h2>
+      <img src="/src/assets/Search widget/problem.png" alt="Original widget before the redesign, dark background, new product types buried under a secondary tab" style="margin-bottom: 8px; border: 1px solid var(--color-border);" />
+      <p class="img-caption" style="margin-bottom: 24px;">The widget before the redesign: dark background, new product types buried under a secondary tab</p>
+      <p>Costco Travel had just added Hotel Only search and Dynamic Packages alongside our long-standing Vacation Packages. Both new lines underperformed against the business case from launch.</p>
+      <ol style="list-style: decimal; margin: 0 0 14px; padding-left: 20px; color: var(--color-text-body);">
+        <li style="margin-bottom: 8px;">Vacation Packages had their own dedicated tab in the widget.</li>
+        <li>Dynamic Packages covered three combinations: Hotel + Flight, Hotel + Flight + Car, and Hotel + Car. Not every destination available under Vacation Packages was available under Dynamic Packages.</li>
+      </ol>
+      <p>The widget had been built and patched around Vacation Packages for years, so Hotel Only search and Dynamic Packages were slotted in as secondary tabs instead of designed in from scratch. It looked like one unified product. It was actually optimized for Vacation Packages, at the expense of the other two.</p>
+      <p>The initial ask I received was to make the new tabs more visible. I pushed back, because a visibility fix assumes layout is the whole problem. I started with research instead, and that changed the scope of the work.</p>
+      <div class="quote-block">
+        <p class="quote-text">"I don't even know what the difference is between these two package things. I'll just call an agent if I want the good deal."</p>
+        <p class="quote-attr">Usability session participant, on the Vacation Package vs. dynamic package distinction</p>
+      </div>
+    </section>
+
+    <!-- 02: MY ROLE -->
+    <section class="section gsap-fade">
+      <span class="eyebrow">02: My Role And How I Worked</span>
+      <h2>I owned every decision on the widget, and built the process that made testing repeatable</h2>
+      <ul class="role-list">
+        <li>
+          <span class="role-label">What I owned</span>
+          <span>Every design decision on the widget, from concept through the A/B test spec. I partnered with our researcher on study design and sat in on every usability session myself instead of reading a summary afterward.</span>
+        </li>
+        <li>
+          <span class="role-label">What I built</span>
+          <span>The A/B testing worksheet that became our standard process: hypothesis, the specific user problem it addressed, the metric it should move, and the metric it must not move. Every test after the first used this template.</span>
+        </li>
+        <li>
+          <span class="role-label">Who I worked with</span>
+          <span>I partnered with one researcher on study design, two engineers who built and instrumented each variant, and a product manager who owned stakeholder roadmap conversations. I ran a weekly sync to keep the four of us aligned.</span>
+        </li>
+      </ul>
+      <div class="research-stat">
+        <div class="rs-num">10 to 20%</div>
+        <div class="rs-desc">of the time, users preferred our widget over Expedia, Booking.com, and Google Travel in comparative usability sessions. That number is what got stakeholders to agree this was a design problem, not a marketing problem.</div>
+      </div>
+    </section>
+
+    <!-- 03: PROCESS -->
+    <section class="section gsap-fade">
+      <span class="eyebrow">03: How I Ran It</span>
+      <div class="process-wrap">
+        <div class="process-row">
+          <div class="pstep">
+            <div class="pstep-num">01</div>
+            <div class="pstep-name">Research</div>
+            <div class="pstep-detail">Competitive usability studies against three competitors, plus a stakeholder workshop to align on one shared success metric before any design work started.</div>
+          </div>
+          <div class="pstep">
+            <div class="pstep-num">02</div>
+            <div class="pstep-name">Concept</div>
+            <div class="pstep-detail">Explored three directions: spinning Vacation Packages into its own widget, a single search field, and a left-hand vertical navigation. Tested all three in low-fidelity usability sessions.</div>
+          </div>
+          <div class="pstep">
+            <div class="pstep-num">03</div>
+            <div class="pstep-name">A/B test</div>
+            <div class="pstep-detail">Every validated concept went into a live test in Google Optimize before it shipped broadly. No decision above a cosmetic tweak skipped this step.</div>
+          </div>
+          <div class="pstep">
+            <div class="pstep-num">04</div>
+            <div class="pstep-name">Ship & re-baseline</div>
+            <div class="pstep-detail">Winning variants became the new control. The next test always measured against the most recent shipped state, not the original widget, so gains compounded instead of resetting.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04: KEY DECISIONS -->
+    <section class="section gsap-fade">
+      <span class="eyebrow">04: Decisions I Made, And What Each One Cost</span>
+      <h2 style="margin-bottom: 24px;">Four shipped iterations. Each one answered a specific finding from research</h2>
+
+      <div class="decision-block">
+        <div class="decision-inner">
+          <div class="decision-copy">
+            <div class="decision-idx">Decision 01</div>
+            <h3>Moved new products into the primary tab position</h3>
+            <p>Stakeholders were most nervous about this one. It meant demoting Vacation Packages, our highest-revenue line, out of the default position. I walked them through the A/B testing worksheet and the cannibalization risk math before I got sign-off to test it live.</p>
+            <span class="decision-result">+5.8% new product search, legacy still gained 1.6%</span>
+          </div>
+          <div class="decision-art">
+            <img src="/src/assets/Search widget/Decision1.png" alt="New products moved into the primary tab position" />
+          </div>
+        </div>
+      </div>
+
+      <div class="decision-block">
+        <div class="decision-inner">
+          <div class="decision-copy">
+            <div class="decision-idx">Decision 02</div>
+            <h3>Collapsed Hotel Only search into a single line</h3>
+            <p>Every competitor I studied used a single-line hotel search. Ours had multiple stacked fields left over from an older layout. This was the simplest fix in the project.</p>
+            <span class="decision-result">+3.8% hotel search</span>
+          </div>
+          <div class="decision-art">
+            <img src="/src/assets/Search widget/Decision2.png" alt="Hotel Only search collapsed into a single line" />
+          </div>
+        </div>
+      </div>
+
+      <div class="decision-block">
+        <div class="decision-inner">
+          <div class="decision-copy">
+            <div class="decision-idx">Decision 03</div>
+            <h3>Combined Vacation Package and Dynamic Package search into one entry point</h3>
+            <p>Vacation Packages are negotiated hotel by hotel by our buyers, with exclusive extras but limited destination coverage. Dynamic packages are negotiated at the chain level and available almost everywhere. Users could not tell the two apart, and the pill-box selector asking them to pick one upfront was asking them to answer a question they didn't understand.</p>
+            <p>After dozens of studies and design iterations, I removed the pill boxes entirely and consolidated both products into a single search field, routing users to the right result based on the destination they typed. It's the same pattern that had already worked for Hotel Only search, so I wasn't starting from zero on trust in the approach. New package searches went up. Vacation Packages dipped for two weeks, a tradeoff I flagged to stakeholders going in.</p>
+            <span class="decision-result">+7.2% new package searches, Vacation Packages dipped 0.4% for two weeks</span>
+          </div>
+          <div class="decision-art">
+            <img src="/src/assets/Search widget/Decision3.png" alt="Pill-box selector removed, single destination field routing to results" />
+          </div>
+        </div>
+      </div>
+
+      <div class="decision-block">
+        <div class="decision-inner">
+          <div class="decision-copy">
+            <div class="decision-idx">Decision 04</div>
+            <h3>Added a curated destination spotlight instead of bringing the selector back</h3>
+            <p>The 0.4% dip on Vacation Packages needed a fix that didn't undo decision 03. Rather than reintroduce the pill boxes, I designed a graphical dropdown that surfaces top-value curated destinations the moment a user focuses the search field, while still letting them type any destination they want. It recovered Vacation Packages without touching the routing win.</p>
+            <span class="decision-result">Vacation Packages recovered to +2.1%, new package gains held at +7.2%</span>
+          </div>
+          <div class="decision-art">
+            <img src="/src/assets/Search widget/Decision4.png" alt="Curated destination spotlight shown on destination field focus" />
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 05: STAKEHOLDERS -->
+    <section class="section gsap-fade">
+      <span class="eyebrow">05: Managing Stakeholders Through This</span>
+      <div class="two-col left-heavy">
+        <div>
+          <h2>Not every stakeholder trusted the same evidence, so I stopped presenting one kind</h2>
+          <p>Some stakeholders moved on a single compelling usability clip. Others wanted nothing but the Google Optimize confidence interval. Early on I built one deck for every audience. It landed weakly with everyone, and that was my mistake to fix. I split the readout into a qualitative highlight reel and a quantitative results summary, and let each stakeholder group pull from whichever convinced them.</p>
+          <p>I set the pace deliberately slow: research finding, targeted design, usability check, then an A/B test before anything shipped broadly. Some stakeholders wanted the new-product problem solved in one redesign, and that frustrated them. I held the line, because the alternative was shipping changes nobody could attribute results to, which is how the original widget ended up unmeasured in the first place.</p>
+        </div>
+        <div>
+          <div class="callout">
+            <span class="callout-badge">A gap I'll name directly</span>
+            <h3>The Vacation Package vs. dynamic distinction is still not solved</h3>
+            <p style="font-size: 13px;">The destination spotlight recovered the metric, but it didn't resolve the underlying confusion users have about what separates a Vacation Package from a dynamic one. It's a mitigation, not a fix. That distinction needs dedicated design and content work I haven't had the roadmap space to do yet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06: OUTCOMES -->
+    <section class="section gsap-fade" style="border-bottom: none;">
+      <span class="eyebrow">06: Outcomes</span>
+      <div class="outcome-section">
+        <span class="eyebrow">Cumulative results across all shipped iterations</span>
+        <h2>The widget now converts better than it did before the pandemic, on every product line</h2>
+        <p style="max-width: 560px;">None of these numbers came from one redesign. Each is the compounding result of testing one hypothesis at a time against the most recently shipped version of the widget, never against the original baseline.</p>
+        <div class="outcome-grid">
+          <div class="outcome-card">
+            <div class="outcome-num">+8%</div>
+            <div class="outcome-desc">increase in overall search volume from the widget</div>
+          </div>
+          <div class="outcome-card">
+            <div class="outcome-num">+5%</div>
+            <div class="outcome-desc">booking growth versus pre-pandemic levels</div>
+          </div>
+          <div class="outcome-card">
+            <div class="outcome-num">~10%</div>
+            <div class="outcome-desc">booking performance now beating pre-pandemic levels, and still climbing</div>
+          </div>
+          <div class="outcome-card">
+            <div class="outcome-num">4</div>
+            <div class="outcome-desc">major A/B tested iterations shipped, each one a keeper</div>
+          </div>
+          <div class="outcome-card">
+            <div class="outcome-num">1</div>
+            <div class="outcome-desc">reusable A/B testing worksheet, now the default process for search widget changes</div>
+          </div>
+          <div class="outcome-card">
+            <div class="outcome-num">0</div>
+            <div class="outcome-desc">shipped iterations that hurt the legacy Vacation Packages line net of recovery work</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07: LEARNINGS -->
+    <section class="section gsap-fade">
+      <span class="eyebrow">07: What I Learned</span>
+      <div class="learn-grid">
+        <div class="learn-card">
+          <div class="learn-title">Bring stakeholders into the research, not just the results</div>
+          <div class="learn-body">Some stakeholders had never worked with a designer who tested hypotheses this rigorously. Showing them the research, not only the outcome, is what got decision 03 approved. Removing the pill-box selector entirely was the biggest structural gamble I made in this project.</div>
+        </div>
+        <div class="learn-card">
+          <div class="learn-title">One reusable testing worksheet beat any single test result</div>
+          <div class="learn-body">The worksheet format, hypothesis, user problem, metric to move, metric to protect, let the team run test after test without relitigating methodology each time. It outlived this project.</div>
+        </div>
+      </div>
+
+      <div class="next-wrap">
+        <a href="/car-rental/" class="next-btn">Next project →</a>
+      </div>
+    </section>
+
+  </div>
+
+  <div id="site-footer"></div>
+
+</body>
+</html>

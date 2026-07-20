@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Costco Travel: Airline Credit Refunds · Adi</title>
+  <script type="module" src="/src/pages/aircredit.ts"></script>
+</head>
+
+<body>
+
+  <div id="site-nav"></div>
+
+  <div class="page">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="tag-row gsap-fade">
+        <span class="tag">Self Service</span>
+        <span class="tag">Ecommerce</span>
+      </div>
+      <h1 class="gsap-fade">Airline Credit Refunds</h1>
+      <p class="hero-sub gsap-fade">
+        This shipped during the pandemic, when airlines were cancelling flights by the thousands and members needed a fast, clear way to rebook or recover their money, not a seven hour hold. <strong>I designed the online cancellation flow that replaced the only option members had: calling an agent.</strong> It cut airline cancellation calls to the contact center by 65% within 90 days and took average resolution time from hours to minutes.
+      </p>
+      <div class="tag-row gsap-fade">
+        <span class="tag neutral">Lead UX Designer</span>
+        <span class="tag neutral">Desktop Web</span>
+        <span class="tag neutral">Costco Travel</span>
+      </div>
+
+      <div class="hero-img gsap-fade">
+        <img src="/src/assets/Air credit/Hero2.svg" alt="Airline credit refund flow overview" />
+      </div>
+    </section>
+
+    <!-- STAT STRIP -->
+    <div class="stat-strip gsap-fade">
+      <div class="stat-strip-label">Before this shipped</div>
+      <div class="stat-grid">
+        <div class="stat-item">
+          <div class="stat-num js-counter" data-target="100" data-suffix="%">0%</div>
+          <div class="stat-desc">of cancellations for flight inclusive packages went through a phone agent. There was no online option.</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">1,200+</div>
+          <div class="stat-desc">calls a month came into the call center about airline cancellations alone.</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">7 hrs</div>
+          <div class="stat-desc">was the longest members waited on hold during peak periods.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- S1: PROBLEM -->
+    <section class="section gsap-fade">
+      <span class="eyebrow">01: The Problem</span>
+      <h2>Cancelling a flight meant getting in line for a phone call</h2>
+      <p style="max-width: 62ch;">Costco Travel sells vacation packages that bundle flights with hotels and rental cars. Cancelling one meant calling an agent. Self service cancellation stopped short of anything involving a flight.</p>
+      <p style="max-width: 62ch;">The call center fielded more than 1,200 calls a month about airline cancellations alone. During busy periods, members waited as long as seven hours to get through.</p>
+      <p style="max-width: 62ch;">I asked a narrower question than "how do we add a cancel button." I asked why cancelling a flight was harder to explain than cancelling a hotel. The answer was airline credit. Unlike a refund, it comes with restrictions, expiration dates, and per passenger math that no one had designed for outside a phone call.</p>
+    </section>
+
+    <!-- S2: MY ROLE -->
+    <section class="section gsap-fade">
+      <span class="eyebrow">02: My Role And How I Worked</span>
+      <h2>I led the work end to end, from research through the engineering handoff</h2>
+      <ul class="role-list">
+        <li>
+          <span class="role-label">What I owned</span>
+          <span>The end to end design work: research, flows, mockups, usability testing, and the Figma handoff to engineering.</span>
+        </li>
+        <li>
+          <span class="role-label">Who I worked with</span>
+          <span>A product manager, a UX researcher who partnered with me on the call center sessions, and a data analyst who helped define and track the success metrics.</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- S3: RESEARCH -->
+    <section class="section gsap-fade">
+      <span class="eyebrow">03: Research</span>
+      <div class="two-col left-heavy">
+        <div>
+          <h2>I researched the call, not just the flow</h2>
+          <p>I pulled the existing data on cancellation volume and call reasons. Then I partnered with our UX researcher and ran moderated sessions with the call center agents who took these calls every day.</p>
+          <p>The same pattern surfaced every session. Members were not confused about how to cancel. They were confused about what would happen to their money. Every call opened with a version of the same question, and agents had to answer it before they could do anything else.</p>
+          <p>That reframed the problem. Cancellation itself was easy to find. What was missing was a clear answer, before anyone picked up the phone, to what a member would actually get back. I designed toward that gap for the rest of the project.</p>
+        </div>
+        <div>
+          <div class="quote-block">
+            <p class="quote-text">"Every single call starts the same way. They want to know what they are going to get back before we even talk about cancelling."</p>
+            <p class="quote-attr">Call center agent, moderated research session</p>
+          </div>
+          <div class="quote-block" style="margin-top: 12px;">
+            <p class="quote-text">"They already decided to cancel before they called. They just need to know if it is worth it."</p>
+            <p class="quote-attr">Call center agent, moderated research session</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- S3: PROCESS -->
+    <section class="section gsap-fade">
+      <span class="eyebrow">04: How I Ran It</span>
+      <h2 style="margin-bottom: 24px;">Research through handoff, end to end</h2>
+      <p style="max-width: 52ch; margin-bottom: 32px;">Five steps carried this from an existing call center dataset to a shipped, measured flow.</p>
+
+      <div class="process-wrap">
+        <div class="process-row cols-5">
+          <div class="pstep">
+            <div class="pstep-num">01</div>
+            <div class="pstep-name">Research</div>
+            <div class="pstep-detail">Existing call data plus moderated sessions with call center agents.</div>
+          </div>
+          <div class="pstep">
+            <div class="pstep-num">02</div>
+            <div class="pstep-name">Concept</div>
+            <div class="pstep-detail">Designed flows and mockups, then checked them against engineering constraints.</div>
+          </div>
+          <div class="pstep">
+            <div class="pstep-num">03</div>
+            <div class="pstep-name">Iteration</div>
+            <div class="pstep-detail">Built the new components, ran usability tests, fixed what testing surfaced.</div>
+          </div>
+          <div class="pstep">
+            <div class="pstep-num">04</div>
+            <div class="pstep-name">Handoff</div>
+            <div class="pstep-detail">Organized Figma files so PMs and engineers could build directly from them.</div>
+          </div>
+          <div class="pstep">
+            <div class="pstep-num">05</div>
+            <div class="pstep-name">Metrics</div>
+            <div class="pstep-detail">Partnered with the data analyst to define and track success metrics.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- S4: SOLUTION -->
+    <section class="section gsap-fade">
+      <span class="eyebrow">05: The Solution</span>
+      <h2 style="margin-bottom: 10px;">Four screens that finally explained the money</h2>
+      <p style="max-width: 56ch; margin-bottom: 36px;">The research pointed to one job: make the financial outcome of cancelling legible before a member committed to it. Here is how that showed up across the flow.</p>
+
+      <!-- Decision 1 -->
+      <div class="decision-block">
+        <div class="decision-inner">
+          <div class="decision-copy">
+            <div class="decision-idx">Decision 01</div>
+            <h3>Show the credit breakdown before asking for confirmation</h3>
+            <p>Members needed to see exactly what they would receive, per passenger, before they could make a real decision. I moved the credit summary to the top of the cancellation confirmation screen rather than revealing it only after the action was taken.</p>
+          </div>
+          <div class="decision-art">
+            <img src="/src/assets/Air credit/Decision1.png" alt="Credit breakdown screen shown before cancellation confirmation" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Decision 2 -->
+      <div class="decision-block">
+        <div class="decision-inner">
+          <div class="decision-copy">
+            <div class="decision-idx">Decision 02</div>
+            <h3>Surface expiration dates as a primary piece of information</h3>
+            <p>Airline credits expire. That detail was buried in the fine print across every prior touchpoint. I made the expiration date typographically equal to the credit amount itself, because for most members, the timeline is the thing that determines whether the credit is actually usable.</p>
+          </div>
+          <div class="decision-art">
+            <img src="/src/assets/Air credit/Decision2.png" alt="Expiration date treatment shown at equal visual weight to the credit amount" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Decision 3 -->
+      <div class="decision-block">
+        <div class="decision-inner">
+          <div class="decision-copy">
+            <div class="decision-idx">Decision 03</div>
+            <h3>Build a per passenger breakdown, not a total</h3>
+            <p>Groups travelling together often cancel individually. A single total credit figure was misleading when the credit was actually split across different passengers and airlines. I designed a per passenger table that matched how the credit would actually be issued and used.</p>
+          </div>
+          <div class="decision-art">
+            <img src="/src/assets/Air credit/Decision3.png" alt="Per-passenger credit breakdown table" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Decision 4 -->
+      <div class="decision-block">
+        <div class="decision-inner">
+          <div class="decision-copy">
+            <div class="decision-idx">Decision 04</div>
+            <h3>Give members a way to save the credit details without calling back</h3>
+            <p>After cancellation, members had no record of their credit outside of the confirmation email. I added a confirmation screen that displayed the full credit summary, copyable codes, and a PDF download, so members did not need to call back just to retrieve information they had already been told.</p>
+          </div>
+          <div class="decision-art">
+            <img src="/src/assets/Air credit/Decision4.png" alt="Confirmation screen with credit summary, copyable codes, and PDF download" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- S5: OUTCOMES -->
+    <section class="section gsap-fade" style="border-bottom: none;">
+      <span class="eyebrow">06: Outcomes</span>
+      <div class="outcome-section">
+        <h2 style="margin-bottom: 12px;">The calls went down. The confidence went up.</h2>
+        <p style="max-width: 54ch; margin-bottom: 0;">Once the flow shipped, members could complete a flight cancellation online without speaking to an agent. The call center data told the rest of the story.</p>
+
+        <div class="outcome-grid">
+          <div class="outcome-card">
+            <div class="outcome-num js-counter" data-target="65" data-suffix="%">0%</div>
+            <div class="outcome-desc">reduction in airline cancellation calls to the contact center within the first 90 days</div>
+          </div>
+          <div class="outcome-card">
+            <div class="outcome-num">1,200+</div>
+            <div class="outcome-desc">calls a month redirected to self service, freeing agents to focus on complex cases</div>
+          </div>
+          <div class="outcome-card">
+            <div class="outcome-num">0 min</div>
+            <div class="outcome-desc">hold time for members who chose to cancel online, down from a peak of 7 hours</div>
+          </div>
+        </div>
+
+        <div style="margin-top: 28px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1);">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div class="quote-block" style="background: rgba(255,255,255,0.05); border-left-color: var(--neon-400);">
+              <p class="quote-text" style="color: var(--green-50);">"I could not believe how easy it was. I expected to be on hold all afternoon. I was done in three minutes."</p>
+              <p class="quote-attr" style="color: var(--green-100);">Costco Travel member, post launch feedback</p>
+            </div>
+            <div class="quote-block" style="background: rgba(255,255,255,0.05); border-left-color: var(--neon-400);">
+              <p class="quote-text" style="color: var(--green-50);">"Showing the credit amount upfront was exactly the right call. That is the question we were answering on every single call."</p>
+              <p class="quote-attr" style="color: var(--green-100);">Call center team lead, post launch review</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- S6: REFLECTION -->
+    <section class="section gsap-fade">
+      <span class="eyebrow">07: What I Learned</span>
+      <h2>What I learned</h2>
+      <div class="learn-grid" style="margin-top: 4px;">
+        <div class="learn-card">
+          <div class="learn-title">Design toward the question, not the action</div>
+          <div class="learn-body">Members were not confused about how to cancel. They were confused about what would happen after. The UI needed to answer that first.</div>
+        </div>
+        <div class="learn-card">
+          <div class="learn-title">Call center agents are the best researchers you have</div>
+          <div class="learn-body">They hear the same questions hundreds of times a week. Getting into those sessions early saves weeks of discovery work.</div>
+        </div>
+        <div class="learn-card">
+          <div class="learn-title">Financial clarity reduces anxiety better than reassurance</div>
+          <div class="learn-body">Showing the number, not promising it would be okay, is what actually built confidence in the flow.</div>
+        </div>
+        <div class="learn-card">
+          <div class="learn-title">Post cancellation is still part of the experience</div>
+          <div class="learn-body">Members needed their credit details after the flow ended. Designing for that step prevented a whole secondary category of calls.</div>
+        </div>
+      </div>
+
+      <h2 style="margin-top: 32px;">What I would do differently</h2>
+      <p>I got into the call center recordings too late. The agent sessions were the most valuable research I did, but I ran them only after I'd already spent time mapping edge cases in the existing flow. Starting with the calls would have gotten me to the core insight faster.</p>
+      <p>I also should have pushed harder to recruit members who'd already cancelled by phone into usability testing. That group was hard to recruit, so I tested with a general sample instead. It missed anxiety points a phone experienced group would have surfaced.</p>
+
+      <div class="next-wrap">
+        <a href="/search-widget/" class="next-btn">Next project →</a>
+      </div>
+      <p class="next-note">Further detail on design decisions is available in PDF format upon request.</p>
+    </section>
+
+  </div>
+
+  <div id="site-footer"></div>
+
+</body>
+</html>

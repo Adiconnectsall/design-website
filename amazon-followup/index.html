@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazon Engage: Followup Feature · Adi</title>
+  <script type="module" src="/src/pages/amazon-followup.ts"></script>
+</head>
+
+<body>
+
+  <div id="site-nav"></div>
+
+  <div class="page">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="tag-row gsap-fade">
+        <span class="tag">Product Design</span>
+        <span class="tag">Feature Design</span>
+        <span class="tag">Internal Tooling</span>
+      </div>
+      <h1 class="gsap-fade">Amazon Engage: Followup Feature</h1>
+      <p class="hero-sub gsap-fade">HR leaders at Amazon's worldwide operations were tracking followups on paper. I designed a notification and reminder system inside an internal tool called Engage that automated the process, and 15,000 followups were created in the first month after launch.</p>
+      <div class="tag-row gsap-fade">
+        <span class="tag neutral">Mid Level UX Designer</span>
+        <span class="tag neutral">6 Design Sprints</span>
+        <span class="tag neutral">Figma</span>
+      </div>
+
+      <!-- REPLACE: Hero image showing the Engage Followup feature screens -->
+      <div class="hero-img gsap-fade">
+        <div class="img-placeholder" style="height: 400px;">
+          <span class="ph-icon">📋</span>
+          <span class="ph-label">Engage Followup feature screens</span>
+          <span class="ph-sub">Replace with: engage-hero.png</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAT STRIP -->
+    <div class="stat-strip gsap-fade">
+      <div class="stat-strip-label">Where things stand today</div>
+      <div class="stat-grid">
+        <div class="stat-item">
+          <div class="stat-num">15,000</div>
+          <div class="stat-desc">followups created globally in the first month after launch</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">10/10</div>
+          <div class="stat-desc">usability test participants successfully created a followup</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">1.4 sec</div>
+          <div class="stat-desc">average time for a user to create a new followup in testing</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 01: THE PROBLEM -->
+    <section class="section gsap-fade">
+      <p class="eyebrow">01: The Problem</p>
+      <div class="two-col left-heavy">
+        <div>
+          <h2>HR leaders were writing followup reminders on paper and still missing them</h2>
+          <p>HR leaders within Amazon's worldwide operations (WWO) were required to complete suggested tasks inside Engage, an internal tool for connecting and developing relationships with direct reports. But there was no structure inside Engage for creating followups after an initial meeting.</p>
+          <p>Leaders were writing down who to follow up with on paper. With 30 to 40 direct reports per shift, notes got missed. Some leaders reported forgetting to follow up entirely because of the volume of conversations they were managing.</p>
+          <p>The problem was not lack of intent. It was lack of infrastructure. Every reminder lived outside the system that was supposed to support the work.</p>
+        </div>
+        <div>
+          <div class="quote-block">
+            <p class="quote-text">"I speak to 30 to 40 direct reports every shift. It's really difficult to write down notes and remember to follow up with them again."</p>
+            <p class="quote-attr">Interview participant, HR Leader</p>
+          </div>
+          <div class="quote-block">
+            <p class="quote-text">"My team is my family and I want to be able to provide them all the resources they need, but sometimes it can be overwhelming due to the short amount of time."</p>
+            <p class="quote-attr">Interview participant, HR Leader</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02: MY ROLE -->
+    <section class="section gsap-fade">
+      <p class="eyebrow">02: My Role And How I Worked</p>
+      <h2>I owned the feature end to end, from the first interview to the final handoff</h2>
+      <ul class="role-list">
+        <li>
+          <span class="role-label">What I owned</span>
+          <span>The end to end design of the Followup feature: research, five user flows, prototypes, usability testing, and the stakeholder handoff documentation.</span>
+        </li>
+        <li>
+          <span class="role-label">Who I worked with</span>
+          <span>A product manager who surfaced the initial request and helped scope the research, and an engineering partner who validated technical feasibility throughout design.</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 03: RESEARCH -->
+    <section class="section gsap-fade">
+      <p class="eyebrow">03: Research</p>
+      <h2>I interviewed 30 HR leaders across North America, the EU, and Asia to understand exactly where the process broke down</h2>
+      <p>A number of HR leaders had surfaced a feature request to the product manager. They needed a way to create followups inside Engage. The PM asked our UX team to examine what was really happening before we designed anything.</p>
+      <p style="margin-bottom: 28px;">I requested a participant list from the PM that included both regular users and super users, defined as leaders who had logged more than 10,000 engagements. I interviewed 10 leaders from each region: North America, the European Union, and Asia, 30 participants in total, including some of the leaders who had originally surfaced the request. During the interviews I asked behavioral and task oriented questions: how they currently manage followups, how often they check in with direct reports, what topics those conversations cover, and where things fall through the cracks.</p>
+
+      <div>
+        <div class="research-stat">
+          <div class="rs-num">30/30</div>
+          <div class="rs-desc">leaders said they follow up with direct reports regularly to make sure their needs are being met</div>
+        </div>
+        <div class="research-stat">
+          <div class="rs-num">27/30</div>
+          <div class="rs-desc">leaders said they make notes on paper and follow up in the next few days</div>
+        </div>
+        <div class="research-stat">
+          <div class="rs-num">9/30</div>
+          <div class="rs-desc">leaders reported forgetting to follow up on a topic because of the number of direct reports they manage</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04: PROCESS -->
+    <section class="section gsap-fade">
+      <p class="eyebrow">04: How I Ran It</p>
+      <div class="process-wrap">
+        <h2 style="color: var(--green-50); margin-bottom: 6px;">Six design sprints, from research to tested prototypes</h2>
+        <p style="color: var(--green-100); font-size: 13px; margin-bottom: 0;">I moved from stakeholder alignment through research, design, and testing across six design sprints.</p>
+        <div class="process-row cols-3">
+          <div class="pstep">
+            <div class="pstep-num">01</div>
+            <div class="pstep-name">Feature request and scoping</div>
+            <div class="pstep-detail">PM surfaced HR leader requests. I aligned with stakeholders on research scope and recruited 10 participants across NA and the EU, including super users with 10,000+ engagements.</div>
+          </div>
+          <div class="pstep">
+            <div class="pstep-num">02</div>
+            <div class="pstep-name">Interviews and synthesis</div>
+            <div class="pstep-detail">Conducted 10 user interviews. Synthesized into a findings report with patterns and a hypothesis. Presented to stakeholders before moving to design.</div>
+          </div>
+          <div class="pstep">
+            <div class="pstep-num">03</div>
+            <div class="pstep-name">Design and iteration</div>
+            <div class="pstep-detail">Developed several design iterations using the Org design library. Synced with engineering to validate technical feasibility. Defined five user flows covering create, edit, delete, complete, and error states.</div>
+          </div>
+          <div class="pstep">
+            <div class="pstep-num">04</div>
+            <div class="pstep-name">Prototype testing</div>
+            <div class="pstep-detail">Built InVision prototypes and recruited 10 new participants for usability testing. Defined task metrics for success and fail rates. All 10 participants completed every task.</div>
+          </div>
+          <div class="pstep">
+            <div class="pstep-num">05</div>
+            <div class="pstep-name">Handoff and documentation</div>
+            <div class="pstep-detail">Created a stakeholder presentation and published an internal Amazon Wiki page explaining the feature for customers and the wider team.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05: THE SOLUTION -->
+    <section class="section gsap-fade">
+      <p class="eyebrow">05: The Solution</p>
+      <h2>A notification and reminder system built into Engage so followups never live outside the tool</h2>
+      <p>The Followup feature lets HR leaders set reminders while logging previously completed tasks with direct reports. Leaders can schedule, edit, delete, and complete followups without leaving Engage, and continue existing conversations from the same place they were started.</p>
+      <p style="margin-bottom: 28px;">I designed the feature across three existing pages in Engage: the home page, the employee detail page, and the log engagement page. Followups surface in each context depending on where the leader is in their workflow.</p>
+
+      <div style="border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 8px 32px -8px rgba(23,52,4,0.12); margin-bottom: 24px;">
+        <img src="/src/assets/Followup/Website-designs.png" alt="Followup feature key screen designs across the Engage platform" style="width: 100%; display: block; border-radius: 0;" />
+      </div>
+
+      <ol style="list-style: none; padding: 0; margin: 0 0 36px; display: flex; flex-direction: column; gap: 0;">
+        <li style="display: flex; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--color-border);">
+          <span style="font-family: var(--font-display); font-size: 11px; font-weight: 600; color: var(--violet-600); background: var(--violet-50); border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">1</span>
+          <span style="font-size: 13px; line-height: 1.55;"><strong style="color: var(--color-text-primary); font-weight: 500;">Home page</strong>: Leaders toggle followup reminders on and off directly from the home page, so pending actions are always one tap away.</span>
+        </li>
+        <li style="display: flex; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--color-border);">
+          <span style="font-family: var(--font-display); font-size: 11px; font-weight: 600; color: var(--violet-600); background: var(--violet-50); border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">2</span>
+          <span style="font-size: 13px; line-height: 1.55;"><strong style="color: var(--color-text-primary); font-weight: 500;">Employee Detail page</strong>: Every followup action a leader takes with a direct report is logged automatically in the engagement history table, creating a clear record without any extra steps.</span>
+        </li>
+        <li style="display: flex; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--color-border);">
+          <span style="font-family: var(--font-display); font-size: 11px; font-weight: 600; color: var(--violet-600); background: var(--violet-50); border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">3</span>
+          <span style="font-size: 13px; line-height: 1.55;"><strong style="color: var(--color-text-primary); font-weight: 500;">Edit followup modal (home page)</strong>: Leaders can reschedule or adjust a followup from the home page to fit their availability, without losing the context of the original conversation.</span>
+        </li>
+        <li style="display: flex; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--color-border);">
+          <span style="font-family: var(--font-display); font-size: 11px; font-weight: 600; color: var(--violet-600); background: var(--violet-50); border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">4</span>
+          <span style="font-size: 13px; line-height: 1.55;"><strong style="color: var(--color-text-primary); font-weight: 500;">Recommended engagement card (Log engagement page)</strong>: When a followup reminder is due, it surfaces as a card on the log engagement page so leaders can act on it in the same flow they use every day.</span>
+        </li>
+        <li style="display: flex; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--color-border);">
+          <span style="font-family: var(--font-display); font-size: 11px; font-weight: 600; color: var(--violet-600); background: var(--violet-50); border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">5</span>
+          <span style="font-size: 13px; line-height: 1.55;"><strong style="color: var(--color-text-primary); font-weight: 500;">Recommended engagement card (Employee Detail page)</strong>: Pending followup actions for a specific employee are surfaced directly on their detail page, so leaders have the full picture before starting a conversation.</span>
+        </li>
+        <li style="display: flex; gap: 12px; padding: 11px 0;">
+          <span style="font-family: var(--font-display); font-size: 11px; font-weight: 600; color: var(--violet-600); background: var(--violet-50); border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">6</span>
+          <span style="font-size: 13px; line-height: 1.55;"><strong style="color: var(--color-text-primary); font-weight: 500;">Log engagement page</strong>: Leaders create followup reminders from inside the log engagement flow, so the reminder is set at the moment the conversation is logged rather than as a separate task afterwards.</span>
+        </li>
+      </ol>
+
+    </section>
+
+    <!-- 06: USER FLOWS -->
+    <section class="section gsap-fade">
+      <p class="eyebrow">06: User Flows</p>
+      <h2>I mapped five flows covering every state a leader could encounter with a followup</h2>
+      <p style="max-width: 560px; margin-bottom: 28px;">The flows are written around Hannah, an Area Manager, and her direct report Regina. Each flow tests a distinct interaction: the happy path, the error state, completion, editing, and deletion.</p>
+
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; align-items: start;">
+
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="border: 1px solid var(--color-border); border-radius: var(--radius);">
+            <img src="/src/assets/Followup/Create-Follow-up.gif" alt="Create a followup user flow" style="width: 100%; display: block; border-radius: calc(var(--radius) - 1px);" />
+          </div>
+          <div style="display: flex; align-items: flex-start; gap: 7px;">
+            <span style="font-family: var(--font-display); font-size: 11px; font-weight: 600; color: var(--violet-600); background: var(--violet-50); border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;">1</span>
+            <div>
+              <div class="flow-title" style="font-size: 12px; margin-bottom: 3px;">Create a followup</div>
+              <div class="flow-body" style="font-size: 11px;">Hannah had a conversation with Regina about medical leave and creates a followup as a reminder for herself.</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="border: 1px solid var(--color-border); border-radius: var(--radius);">
+            <img src="/src/assets/Followup/Unable-Create-Follow-up.gif" alt="Unable to create a followup user flow" style="width: 100%; display: block; border-radius: calc(var(--radius) - 1px);" />
+          </div>
+          <div style="display: flex; align-items: flex-start; gap: 7px;">
+            <span style="font-family: var(--font-display); font-size: 11px; font-weight: 600; color: var(--violet-600); background: var(--violet-50); border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;">2</span>
+            <div>
+              <div class="flow-title" style="font-size: 12px; margin-bottom: 3px;">Unable to create</div>
+              <div class="flow-body" style="font-size: 11px;">Hannah must complete an existing followup before creating a new one. This covers the error state.</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="border: 1px solid var(--color-border); border-radius: var(--radius);">
+            <img src="/src/assets/Followup/Complete-Follow-up.gif" alt="Complete a followup user flow" style="width: 100%; display: block; border-radius: calc(var(--radius) - 1px);" />
+          </div>
+          <div style="display: flex; align-items: flex-start; gap: 7px;">
+            <span style="font-family: var(--font-display); font-size: 11px; font-weight: 600; color: var(--violet-600); background: var(--violet-50); border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;">3</span>
+            <div>
+              <div class="flow-title" style="font-size: 12px; margin-bottom: 3px;">Complete a followup</div>
+              <div class="flow-body" style="font-size: 11px;">Hannah completes a followup by logging her engagement with Regina from the reminder.</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="border: 1px solid var(--color-border); border-radius: var(--radius);">
+            <img src="/src/assets/Followup/Edit-Follow-up.gif" alt="Edit a followup user flow" style="width: 100%; display: block; border-radius: calc(var(--radius) - 1px);" />
+          </div>
+          <div style="display: flex; align-items: flex-start; gap: 7px;">
+            <span style="font-family: var(--font-display); font-size: 11px; font-weight: 600; color: var(--violet-600); background: var(--violet-50); border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;">4</span>
+            <div>
+              <div class="flow-title" style="font-size: 12px; margin-bottom: 3px;">Edit a followup</div>
+              <div class="flow-body" style="font-size: 11px;">Hannah reschedules a followup due the next day to the following week using the edit modal.</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="border: 1px solid var(--color-border); border-radius: var(--radius);">
+            <img src="/src/assets/Followup/Delete-Follow-up.gif" alt="Delete a followup user flow" style="width: 100%; display: block; border-radius: calc(var(--radius) - 1px);" />
+          </div>
+          <div style="display: flex; align-items: flex-start; gap: 7px;">
+            <span style="font-family: var(--font-display); font-size: 11px; font-weight: 600; color: var(--violet-600); background: var(--violet-50); border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;">5</span>
+            <div>
+              <div class="flow-title" style="font-size: 12px; margin-bottom: 3px;">Delete a followup</div>
+              <div class="flow-body" style="font-size: 11px;">Hannah deletes the followup after the issue with Regina was resolved on its own.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 07: OUTCOMES -->
+    <section class="section gsap-fade" style="border-bottom: none;">
+      <p class="eyebrow">07: Outcomes</p>
+      <div class="outcome-section">
+        <h2>15,000 followups created in the first month after global launch</h2>
+        <p style="max-width: 560px;">The adoption numbers from month one confirmed that HR leaders were ready for this feature. 15,000 followups created without any prompting is a strong signal.</p>
+        <div class="outcome-grid">
+          <div class="outcome-card">
+            <div class="outcome-num">15,000</div>
+            <div class="outcome-desc">followups created and logged in the first month globally</div>
+          </div>
+          <div class="outcome-card">
+            <div class="outcome-num">9,000</div>
+            <div class="outcome-desc">followups generated in the North America region in month one</div>
+          </div>
+          <div class="outcome-card">
+            <div class="outcome-num">6,000</div>
+            <div class="outcome-desc">followups generated in the European Union region in month one</div>
+          </div>
+          <div class="outcome-card">
+            <div class="outcome-num">10/10</div>
+            <div class="outcome-desc">usability test participants successfully created a followup</div>
+          </div>
+          <div class="outcome-card">
+            <div class="outcome-num">1.4 sec</div>
+            <div class="outcome-desc">average time for a user to create a new followup in testing</div>
+          </div>
+          <div class="outcome-card">
+            <div class="outcome-num">10/10</div>
+            <div class="outcome-desc">participants successfully edited and deleted followups</div>
+          </div>
+        </div>
+
+        <div style="margin-top: 28px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1);">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div class="quote-block" style="background: rgba(255,255,255,0.05); border-left-color: var(--neon-400);">
+              <p class="quote-text" style="color: var(--green-50);">"Congratulations to the Engage team on developing Followups. It's so much easier now to continue conversations with my direct report."</p>
+              <p class="quote-attr" style="color: var(--green-100);">HR Leader, North America, post launch feedback</p>
+            </div>
+            <div class="quote-block" style="background: rgba(255,255,255,0.05); border-left-color: var(--neon-400);">
+              <p class="quote-text" style="color: var(--green-50);">"I love that we can create followups now, they are so easy to create."</p>
+              <p class="quote-attr" style="color: var(--green-100);">HR Leader, European Union, post launch feedback</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08: LEARNINGS -->
+    <section class="section gsap-fade" style="border-bottom: none;">
+      <p class="eyebrow">08: What I Learned</p>
+      <h2>The first launch answered whether leaders would use it. The next question is whether it changes team outcomes.</h2>
+      <p style="max-width: 600px; margin-bottom: 32px;">What we do not yet know is whether more consistent followup translates to measurable improvements in team morale or retention. That is the next phase of this work, not a finished one.</p>
+
+      <div class="learn-grid">
+        <div class="learn-card">
+          <div class="learn-title">Research surfaced the feature before design started</div>
+          <div class="learn-body">The project started as a feature request from a small number of leaders. Research confirmed it was a universal problem across the user base. Going broad with recruitment before narrowing to design was the right call and something I would repeat.</div>
+        </div>
+        <div class="learn-card">
+          <div class="learn-title">Conduct a second round of usability testing with seasoned users</div>
+          <div class="learn-body">The first round tested whether the feature worked. The next round should test whether it works efficiently for leaders who have been using it for several months and have formed habits around it.</div>
+        </div>
+        <div class="learn-card">
+          <div class="learn-title">Run field studies to assess impact on team morale</div>
+          <div class="learn-body">Usage data shows leaders are creating followups. Field studies would tell us whether the quality of those followup conversations is improving and whether direct reports feel the difference.</div>
+        </div>
+        <div class="learn-card">
+          <div class="learn-title">Build a recurring followup notification</div>
+          <div class="learn-body">Several interview participants mentioned wanting Engage to suggest followup topics proactively. A recurring notification feature would build on the foundation this design established and further reduce the cognitive load on leaders managing large teams.</div>
+        </div>
+      </div>
+
+      <p class="metric-note" style="margin-top: 40px; margin-bottom: 16px;">More detail on the design decisions, flows, and prototype iterations is available upon request.</p>
+      <div class="next-wrap">
+        <a href="/aircredit/" class="next-btn">Next project →</a>
+      </div>
+    </section>
+
+  </div>
+
+  <div id="site-footer"></div>
+
+</body>
+</html>

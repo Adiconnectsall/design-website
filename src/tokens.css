@@ -1,0 +1,120 @@
+/* ==========================================================================
+   DESIGN TOKENS — Forest + Violet
+   Canonical source for every page in the app (home, case studies).
+   ========================================================================== */
+
+:root {
+  --green-50:  #EAF3DE;
+  --green-100: #C0DD97;
+  --green-200: #97C459;
+  --green-400: #639922;
+  --green-600: #3B6D11;
+  --green-700: #27500A;
+  --green-900: #173404;
+
+  --violet-50:  #EEEDFE;
+  --violet-100: #CECBF6;
+  --violet-200: #AFA9EC;
+  --violet-400: #7F77DD;
+  --violet-600: #534AB7;
+  --violet-800: #3C3489;
+  --violet-900: #26215C;
+
+  --neon-200: #D4F5A0;
+  --neon-400: #9BE63F;
+  --neon-600: #7AC92A;
+
+  --warm-0:   #FDFCFA;
+  --warm-50:  #F5F2EA;
+  --warm-100: #E5E2D8;
+  --warm-400: #888780;
+  --warm-600: #5F5E5A;
+  --warm-900: #2C2C2A;
+
+  --color-bg:               var(--warm-0);
+  --color-bg-secondary:     var(--warm-50);
+  --color-bg-dark:          var(--green-900);
+
+  --color-text-primary:     var(--green-900);
+  --color-text-body:        var(--warm-600);
+  --color-text-muted:       var(--warm-400);
+  --color-text-on-dark:     var(--green-50);
+  --color-text-on-dark-muted: var(--green-100);
+
+  --color-border:           var(--warm-100);
+  --color-border-accent:    var(--green-200);
+
+  --color-accent-primary:   var(--violet-600);
+  --color-accent-primary-text: var(--violet-900);
+  --color-accent-pop:       var(--neon-400);
+  --color-accent-pop-text:  var(--green-900);
+
+  /* alias used by the case-study component system */
+  --color-accent: var(--color-accent-primary);
+
+  --color-success: var(--green-600);
+  --color-warning: #BA7517;
+  --color-danger:  #A32D2D;
+
+  /* ── Fonts ──────────────────────────────────────────────────── */
+  --font-sans:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Inter', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.25rem;
+  --text-xl:   1.5625rem;
+  --text-2xl:  1.953rem;
+  --text-3xl:  2.441rem;
+  --text-4xl:  3.052rem;
+  --text-5xl:  3.815rem;
+
+  --font-weight-regular:  400;
+  --font-weight-medium:   500;
+  --font-weight-semibold: 600;
+
+  --leading-tight:   1.2;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.7;
+
+  --tracking-tight:  -0.01em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.06em;
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 2.5rem;
+  --space-6: 3rem;
+  --space-7: 4rem;
+  --space-8: 5rem;
+  --space-9: 7rem;
+
+  --content-max-width: 1280px;
+  --content-narrow:    720px;
+  --grid-gap:          var(--space-3);
+
+  /* case-study layout tokens */
+  --max-w:       820px;
+  --radius:      10px;
+  --radius-lg:   16px;
+  --radius-pill: 999px;
+
+  /* app tokens (kept for existing Tailwind utility usage) */
+  --radius-sm:   8px;
+  --radius-md:   12px;
+
+  --border-width:           0.5px;
+  --border-width-emphasis:  2px;
+
+  --shadow-sm: 0 1px 2px rgba(23, 52, 4, 0.06);
+  --shadow-md: 0 4px 12px rgba(23, 52, 4, 0.08);
+
+  --duration-fast: 120ms;
+  --duration-base: 200ms;
+  --duration-slow: 320ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}

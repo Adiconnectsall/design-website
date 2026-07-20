@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Costco Travel Design System · Adi</title>
+  <script type="module" src="/src/pages/design-system.ts"></script>
+</head>
+
+<body>
+
+  <div id="site-nav"></div>
+
+  <div class="page">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="tag-row gsap-fade">
+        <span class="tag">Design Systems</span>
+        <span class="tag">Accessibility</span>
+      </div>
+      <h1 class="gsap-fade">Costco Travel Design System</h1>
+      <p class="hero-sub gsap-fade">
+        Costco Travel has 2 million users visiting the site every week. The design system they were experiencing was inconsistent and nearly a decade old, and at that scale, small inconsistencies compound fast. <strong>I led the rebuild</strong>, going back to the drawing board with the team and stakeholders to keep the user at the center and build a system meant to last.
+      </p>
+      <div class="tag-row gsap-fade">
+        <span class="tag neutral">Lead Product Designer</span>
+        <span class="tag neutral">Figma + The Forge</span>
+        <span class="tag neutral">Costco Travel</span>
+        <span class="tag neutral">Team of 6</span>
+      </div>
+
+      <div class="hero-img gsap-fade" style="padding: 24px; background: var(--warm-50);">
+        <img src="/src/assets/Design system/ct-design-system.png" alt="Costco Travel design system overview" style="border-radius: var(--radius);" />
+      </div>
+    </section>
+
+    <!-- STAT STRIP -->
+    <div class="stat-strip gsap-fade">
+      <div class="stat-strip-label">Where things stand today</div>
+      <div class="stat-grid">
+        <div class="stat-item">
+          <div class="stat-num">~25%</div>
+          <div class="stat-desc">reduction in average prototyping time per sprint since rollout</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">WCAG AA</div>
+          <div class="stat-desc">every shipped component meets this standard by default</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">3</div>
+          <div class="stat-desc">atomic levels documented and in production, templates still in progress</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 01: THE PROBLEM -->
+    <section class="section gsap-fade">
+      <span class="eyebrow">01: The Problem</span>
+      <h2>An outside vendor's style guide left too much open to interpretation, and accessibility was never part of it</h2>
+      <p>Costco Travel's style guide had been built years earlier by an external vendor. It covered the basics loosely and never addressed accessibility at all. Every designer filled the gaps with their own judgment, so product, brand, and engineering had each drifted into a different visual language without meaning to.</p>
+      <p>I ran a full UI audit before proposing anything: colors, typography, buttons, forms, icons, dropdowns, cataloged across every live page. I found more than 40 components with three or more inconsistent variants in production at the same time, across four product teams. The audit is what turned "the site feels inconsistent" into a specific, defensible case.</p>
+      <p>It's also the part of this project I'd do differently if I started over. I audited product surfaces one at a time as I got to them, rather than scoping the full inventory up front, which meant I found new drift late into the project that a wider first pass would have caught sooner.</p>
+      <div class="quote-block">
+        <p class="quote-text">"I don't know which button is the real one anymore. Design gave me three."</p>
+        <p class="quote-attr">Engineer, during the initial UI audit interviews</p>
+      </div>
+    </section>
+
+    <!-- 02: MY ROLE -->
+    <section class="section gsap-fade">
+      <span class="eyebrow">02: My Role And How I Worked</span>
+      <h2>I set the architecture and the principles. My team built the library on top of both</h2>
+      <ul class="role-list">
+        <li>
+          <span class="role-label">What I owned</span>
+          <span>The atomic design architecture, the four product principles, component naming conventions, and final review on every component before it shipped to the library.</span>
+        </li>
+        <li>
+          <span class="role-label">What I delegated</span>
+          <span>Component production in Figma and documentation authoring in The Forge, both owned by the design team with my review before anything reached engineering or marketing.</span>
+        </li>
+        <li>
+          <span class="role-label">Who I worked with</span>
+          <span>Three other designers, one researcher, and one developer who built the Figma to Forge sync plugin. Our team had people who'd previously worked at Microsoft, Adobe, and Google, and I leaned on that range deliberately when I assigned component ownership.</span>
+        </li>
+      </ul>
+      <div class="research-stat" style="border-bottom: none; border-top: 1px solid var(--color-border); padding-top: 16px;">
+        <div class="rs-num">3 systems</div>
+        <div class="rs-desc">I wasn't looking to copy a pattern library. I was looking at how each one structured governance, since that was the part our old style guide never had.</div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 16px 0 28px; padding-bottom: 28px; border-bottom: 1px solid var(--color-border);">
+        <div>
+          <img src="/src/assets/Design system/material.png" alt="Google Material Design reference" style="border: 1px solid var(--color-border);" />
+          <p class="img-caption">Google Material</p>
+        </div>
+        <div>
+          <img src="/src/assets/Design system/spectrum.png" alt="Adobe Spectrum reference" style="border: 1px solid var(--color-border);" />
+          <p class="img-caption">Adobe Spectrum</p>
+        </div>
+        <div>
+          <img src="/src/assets/Design system/fluent.png" alt="Microsoft Fluent UI reference" style="border: 1px solid var(--color-border);" />
+          <p class="img-caption">Microsoft Fluent</p>
+        </div>
+      </div>
+      <div class="research-stat" style="border-bottom: none;">
+        <div class="rs-num">4 principles</div>
+        <div class="rs-desc">came out of a cross functional workshop I ran with product, brand, and engineering: trusted over unreliable, clean over cluttered, easy over complex, exciting over boring. Every component debate after that got measured against these four.</div>
+      </div>
+      <div class="two-col" style="margin: 16px 0 28px; padding-bottom: 28px; border-bottom: 1px solid var(--color-border);">
+        <div>
+          <img src="/src/assets/Design system/design-principles.png" alt="Design principles workshop artifact" style="border: 1px solid var(--color-border);" />
+          <p class="img-caption">The principles workshop, run with product, brand, and engineering</p>
+        </div>
+        <div>
+          <img src="/src/assets/Design system/our product experience framework.png" alt="Our product experience framework" style="border: 1px solid var(--color-border);" />
+          <p class="img-caption">The resulting product experience framework</p>
+        </div>
+      </div>
+      <div class="research-stat">
+        <div class="rs-num">Day one</div>
+        <div class="rs-desc">I ran a demo walking through exactly how to build a component and write its documentation in The Forge, so nobody was guessing at the format on their first attempt.</div>
+      </div>
+      <div class="research-stat">
+        <div class="rs-num">Weekly</div>
+        <div class="rs-desc">design review with the designers building components. Each person walked through what they had in progress, and I sent them back with specific direction rather than rewriting the component myself.</div>
+      </div>
+    </section>
+
+    <!-- 03: PROCESS -->
+    <section class="section gsap-fade">
+      <span class="eyebrow">03: How I Ran It</span>
+      <div class="process-wrap">
+        <div class="process-row">
+          <div class="pstep">
+            <div class="pstep-num">01</div>
+            <div class="pstep-name">Audit and benchmark</div>
+            <div class="pstep-detail">Cataloged every live component, then benchmarked Material, Spectrum, and Fluent for governance patterns worth adapting.</div>
+          </div>
+          <div class="pstep">
+            <div class="pstep-num">02</div>
+            <div class="pstep-name">Principles workshop</div>
+            <div class="pstep-detail">Ran a cross functional session with product, brand, and engineering to set the four principles every component would be judged against.</div>
+          </div>
+          <div class="pstep">
+            <div class="pstep-num">03</div>
+            <div class="pstep-name">Build atomic</div>
+            <div class="pstep-detail">Built atoms first, colors, type, grid, spacing, buttons, then molecules and organisms in Figma, using variants for every component state.</div>
+          </div>
+          <div class="pstep">
+            <div class="pstep-num">04</div>
+            <div class="pstep-name">Document and ship</div>
+            <div class="pstep-detail">Every component shipped to The Forge with construction rules, states, accessibility guidance, and a code pattern, synced automatically from Figma.</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 32px;">
+        <img src="/src/assets/Design system/atomic-design.png" alt="Atomic design approach: atoms, molecules, organisms" style="border: 1px solid var(--color-border); margin-bottom: 16px;" />
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
+          <div>
+            <img src="/src/assets/Design system/colors-primary.png" alt="Color tokens, an atom level component" style="border: 1px solid var(--color-border);" />
+            <p class="img-caption">Atom: color tokens</p>
+          </div>
+          <div>
+            <img src="/src/assets/Design system/buttons.png" alt="Button component, a molecule level component" style="border: 1px solid var(--color-border);" />
+            <p class="img-caption">Molecule: buttons</p>
+          </div>
+          <div>
+            <img src="/src/assets/Design system/search-form-mobile.png" alt="Search form, an organism level component" style="border: 1px solid var(--color-border);" />
+            <p class="img-caption">Organism: search form</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04: KEY DECISIONS -->
+    <section class="section gsap-fade">
+      <span class="eyebrow">04: Decisions I Made, And What Each One Cost</span>
+      <h2 style="margin-bottom: 24px;">Three decisions that shaped how the system actually got adopted</h2>
+
+      <div class="decision-block">
+        <div class="decision-inner side-by-side">
+          <div class="decision-copy">
+            <div class="decision-idx">Decision 01</div>
+            <h3>Built accessibility into every component, not as a separate pass</h3>
+            <p>I required every component to clear WCAG AA contrast and spacing before it could ship, rather than auditing for accessibility after the library existed. That meant slower initial output. It also meant zero components needed accessibility rework later, which is where most systems I benchmarked were still losing time.</p>
+            <span class="decision-result">Zero accessibility rework across the shipped library</span>
+          </div>
+          <div class="decision-art">
+            <img src="/src/assets/Design system/contrast.png" alt="Checking contrast ratios for accessibility across component states" />
+          </div>
+        </div>
+      </div>
+
+      <div class="decision-block">
+        <div class="decision-inner">
+          <div class="decision-copy">
+            <div class="decision-idx">Decision 02</div>
+            <h3>Built the code library alongside the Figma library, not after it</h3>
+            <p>I pushed for The Forge and the developer code library to launch the same week as the Figma component library, not months later. Engineering had a documented, working pattern to reference from day one instead of reverse engineering our Figma files.</p>
+            <span class="decision-result">Styling questions from engineering dropped to near zero</span>
+          </div>
+          <div class="decision-art">
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; padding: 20px; background: var(--warm-50);">
+              <div>
+                <img src="/src/assets/Design system/button-documentation-1.png" alt="Component documentation in Figma" />
+                <p class="img-caption">Figma library</p>
+              </div>
+              <div>
+                <img src="/src/assets/Design system/button-documentation-2.png" alt="Component documentation in The Forge" />
+                <p class="img-caption">The Forge docs</p>
+              </div>
+              <div>
+                <img src="/src/assets/Design system/button-documentation-3.png" alt="Code library in The Forge" />
+                <p class="img-caption">Code library</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="decision-block">
+        <div class="decision-inner">
+          <div class="decision-copy">
+            <div class="decision-idx">Decision 03</div>
+            <h3>Gave marketing a standing sign off checkpoint instead of a one time review</h3>
+            <p>Early drafts of new patterns went to marketing once, at the end. I changed that to a biweekly sign off after brand flagged two components post launch that didn't match voice guidelines. The fix cost us a slower cadence. It also meant nothing shipped that brand had to walk back in front of stakeholders.</p>
+            <span class="decision-result">Zero brand flagged patterns after the change</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05: GOVERNANCE -->
+    <section class="section gsap-fade">
+      <span class="eyebrow">05: Documentation And Governance</span>
+      <div class="two-col left-heavy">
+        <div>
+          <h2>A design system with no documentation is a system that forks the moment someone needs something it doesn't have</h2>
+          <p>I built The Forge as the single source of truth: every component's description, construction rules, states, behavior, accessibility notes, and real usage examples in one place, kept in sync with Figma through a plugin our developer built. Engineers read the same documentation instead of asking design to clarify spacing in Slack.</p>
+          <p>I ran stakeholder buy in on three different cadences, because one size did not fit all of them. Executives saw a single presentation on pain points and projected company wide impact. Engineering got weekly working sessions where they could push back on a pattern before it shipped. Marketing got the biweekly sign off I introduced after the first post launch flags. Running three cadences at once was more coordination overhead than I expected going in, but it's what got all three groups to a real sense of shared ownership rather than a mandate handed down to them.</p>
+        </div>
+        <div>
+          <div class="callout">
+            <span class="callout-badge">Governance model</span>
+            <h3>Three stakeholder cadences</h3>
+            <p style="font-size: 13px; margin-bottom: 12px;">Executive: one presentation on pain points, revisited at major milestones. Engineering: weekly working sessions for input before anything ships. Marketing: biweekly sign off on new patterns before release.</p>
+            <div class="gov-grid">
+              <div class="gov-item">
+                <div class="gov-label" style="color: var(--green-600);">Executive</div>
+                <div class="gov-desc">Milestone reviews</div>
+              </div>
+              <div class="gov-item">
+                <div class="gov-label" style="color: var(--violet-600);">Engineering</div>
+                <div class="gov-desc">Weekly working session</div>
+              </div>
+              <div class="gov-item">
+                <div class="gov-label" style="color: #7B4F00;">Marketing</div>
+                <div class="gov-desc">Biweekly sign off</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="two-col" style="margin-top: 28px;">
+        <div>
+          <img src="/src/assets/Design system/design-system-cover.png" alt="Component library in Figma" style="border: 1px solid var(--color-border);" />
+          <p class="img-caption">The component library in Figma</p>
+        </div>
+        <div>
+          <img src="/src/assets/Design system/design-system-stakeholder-presentation.png" alt="Stakeholder kickoff presentation slide" style="border: 1px solid var(--color-border);" />
+          <p class="img-caption">A slide from the stakeholder kickoff presentation</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06: OUTCOMES -->
+    <section class="section gsap-fade" style="border-bottom: none;">
+      <span class="eyebrow">06: Outcomes</span>
+      <div class="outcome-section">
+        <span class="eyebrow">Results since rollout</span>
+        <h2>Prototyping got faster, engineering stopped asking design what a button should look like</h2>
+        <p style="max-width: 560px;">Atoms and molecules are in production today. Organisms are documented for the highest traffic flows. Templates and full pages are still in progress, which is the next phase of this work, not a finished one.</p>
+        <div class="outcome-grid">
+          <div class="outcome-card">
+            <div class="outcome-num">~25%</div>
+            <div class="outcome-desc">reduction in average prototyping time per sprint</div>
+          </div>
+          <div class="outcome-card">
+            <div class="outcome-num">~5 pts</div>
+            <div class="outcome-desc">average time recovered per sprint across design and engineering</div>
+          </div>
+          <div class="outcome-card">
+            <div class="outcome-num">Near zero</div>
+            <div class="outcome-desc">styling questions reaching design from engineering post launch</div>
+          </div>
+          <div class="outcome-card">
+            <div class="outcome-num">3</div>
+            <div class="outcome-desc">atomic levels shipped: atoms, molecules, and organisms</div>
+          </div>
+          <div class="outcome-card">
+            <div class="outcome-num">1</div>
+            <div class="outcome-desc">synced source of truth across Figma and The Forge, no manual duplication</div>
+          </div>
+          <div class="outcome-card">
+            <div class="outcome-num">0</div>
+            <div class="outcome-desc">components shipped below WCAG AA since the accessibility first rule took effect</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07: LEARNINGS -->
+    <section class="section gsap-fade">
+      <span class="eyebrow">07: What I Learned</span>
+      <div class="learn-grid">
+        <div class="learn-card">
+          <div class="learn-title">Accessibility has to be a requirement, not a review step</div>
+          <div class="learn-body">Requiring WCAG AA before a component could ship cost time upfront. It's the reason the library has needed zero accessibility rework since launch. Treating it as a later cleanup pass is the more expensive path, even though it looks faster at first.</div>
+        </div>
+        <div class="learn-card">
+          <div class="learn-title">A system earns adoption through documentation, not a mandate</div>
+          <div class="learn-body">Engineering stopped asking design about styling once The Forge gave them a real reference. That happened because documentation shipped with the components, not after them. A library without documentation is a library people work around.</div>
+        </div>
+      </div>
+      <div class="callout" style="margin-top: 24px;">
+        <span class="callout-badge">This is an ongoing effort</span>
+        <p style="font-size: 13px;">Templates and full pages are still in progress, and component coverage keeps expanding as new product surfaces come online. I'm still running the weekly engineering sessions and the biweekly marketing sign off, and I expect the next major push to be page level templates for the highest traffic booking flows.</p>
+      </div>
+
+      <div class="next-wrap">
+        <a href="/amazon-followup/" class="next-btn">Next project →</a>
+      </div>
+    </section>
+
+  </div>
+
+  <div id="site-footer"></div>
+
+</body>
+</html>
