@@ -4,7 +4,7 @@
  * out of sync page to page.
  */
 
-const RESUME_URL = 'https://drive.google.com/file/d/1bLuxFc3DfHh2RViXT8bH5TQ_U7f2xzYh/view'
+const RESUME_URL = '/Adi_Patil_Resume_Lead_UX_Designer.pdf'
 const LINKEDIN_URL = 'https://www.linkedin.com/in/adi-patil/'
 const EMAIL = 'adiconnects2@gmail.com'
 
