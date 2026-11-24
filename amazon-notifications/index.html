@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazon Engage: Notifications · Adi</title>
+  <script type="module" src="/src/pages/amazon-notifications.ts"></script>
+</head>
+
+<body>
+
+  <div id="site-nav"></div>
+
+  <div class="page">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="tag-row gsap-fade">
+        <span class="tag">Product Design</span>
+        <span class="tag">Accessibility</span>
+        <span class="tag">Internal Tooling</span>
+      </div>
+      <h1 class="gsap-fade">Amazon Engage: Notifications</h1>
+      <p class="hero-sub gsap-fade">Engage's notification patterns relied on color alone to signal status and urgency, which failed international accessibility standards and blocked critical information for HR leaders across more than 200 fulfillment centers worldwide. I redesigned the on-site, off-site, warning, and task complete patterns end to end, and the response was strong enough that the changes were proposed for Amazon's Worldwide Org design library.</p>
+      <div class="tag-row gsap-fade">
+        <span class="tag neutral">Mid Level UX Designer</span>
+        <span class="tag neutral">200+ Fulfillment Centers</span>
+        <span class="tag neutral">Figma</span>
+      </div>
+
+      <div class="hero-img gsap-fade">
+        <img src="/src/assets/Notifications/cover_image.jpeg" alt="Final notification patterns across Engage" />
+      </div>
+    </section>
+
+    <!-- STAT STRIP -->
+    <div class="stat-strip gsap-fade">
+      <div class="stat-strip-label">Where things stand today</div>
+      <div class="stat-grid">
+        <div class="stat-item">
+          <div class="stat-num">200+</div>
+          <div class="stat-desc">fulfillment centers worldwide running Engage every day</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">4</div>
+          <div class="stat-desc">notification patterns redesigned end to end: on-site, off-site, warning, and task complete</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">0</div>
+          <div class="stat-desc">notification states still signaled by color alone, every status now pairs a shape and a label</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 01: THE PROBLEM -->
+    <section class="section gsap-fade">
+      <p class="eyebrow">01: The Problem</p>
+      <h2>Engage's notification patterns failed accessibility standards and buried the information HR leaders needed most</h2>
+      <div class="two-col left-heavy">
+        <div>
+          <p>Engage is Amazon's internal tool for helping HR leaders connect with and develop their direct reports. It runs in more than 200 fulfillment centers worldwide, so any problem in the tool was never a small, contained bug. It touched HR leaders everywhere, every day.</p>
+          <p>The existing notification patterns, on-site, off-site, warning, and task complete, did not meet international accessibility standards. Several of them signaled status and urgency with color alone: a colored dot, a colored icon, and nothing else to back it up.</p>
+        </div>
+        <div>
+          <p>That choice blocked critical information. A leader who could not distinguish the colors, or who was scanning quickly across a table of dozens of direct reports, had no second way to tell which associates needed urgent attention and which did not. The patterns that were supposed to help HR leaders stay on top of their teams were instead causing confusion.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02: MY ROLE -->
+    <section class="section gsap-fade">
+      <p class="eyebrow">02: My Role And How I Worked</p>
+      <h2>I owned the redesign of every notification pattern in Engage, end to end</h2>
+      <p>I audited the existing notification patterns across Engage, researched how other platforms solved the same problem, and redesigned the on-site, off-site, warning, and task complete patterns to meet international accessibility standards without losing any of the information they were meant to carry.</p>
+    </section>
+
+    <!-- 03: HOW I RAN IT -->
+    <section class="section gsap-fade">
+      <p class="eyebrow">03: How I Ran It</p>
+      <div class="process-wrap">
+        <h2 style="color: var(--green-50); margin-bottom: 6px;">Three steps, from audit to a company wide proposal</h2>
+        <p style="color: var(--green-100); font-size: 13px; margin-bottom: 0;">I moved from understanding where the patterns broke down to proposing a fix the rest of Amazon's Worldwide Org could use.</p>
+        <div class="process-row cols-3">
+          <div class="pstep">
+            <div class="pstep-num">01</div>
+            <div class="pstep-name">Platform audit</div>
+            <div class="pstep-detail">I audited the Engage platform end to end to find every place a notification pattern appeared, so I could scope the project accurately instead of guessing at its size.</div>
+          </div>
+          <div class="pstep">
+            <div class="pstep-num">02</div>
+            <div class="pstep-name">Comparative analysis</div>
+            <div class="pstep-detail">I studied how notification patterns worked on other Amazon platforms and on social media platforms, to see how urgency and status get communicated without relying on color alone.</div>
+          </div>
+          <div class="pstep">
+            <div class="pstep-num">03</div>
+            <div class="pstep-name">Design iteration</div>
+            <div class="pstep-detail">I used that research to redesign the four patterns, developed design iterations, and proposed the changes to Amazon's Worldwide Org design library.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04: THE DECISIONS -->
+    <section class="section gsap-fade">
+      <p class="eyebrow">04: The Decisions</p>
+      <h2 style="margin-bottom: 10px;">Two changes that made the patterns accessible without losing any information</h2>
+      <p style="max-width: 56ch; margin-bottom: 36px;">Each of these two changes was really a cluster of smaller decisions, not a single fix.</p>
+
+      <!-- Decision 1 -->
+      <div class="decision-block">
+        <div class="decision-inner">
+          <div class="decision-copy">
+            <div class="decision-idx">Decision 01</div>
+            <h3>Move status onto the avatar, fix the contrast, and turn a solid fill into an open ring</h3>
+            <p style="margin-bottom: 14px;">The old presence badge paired a green dot for on premise with a gray dot for off premise, both sitting directly on a white background. Rounds of review and testing surfaced four separate problems with it:</p>
+            <ol style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0;">
+              <li style="display: flex; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--color-border);">
+                <span style="font-family: var(--font-display); font-size: 11px; font-weight: 600; color: var(--violet-600); background: var(--violet-50); border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">1</span>
+                <span><strong>Contrast.</strong> Both the green and the gray badge colors fell below accessibility contrast standards against the white background. I corrected both.</span>
+              </li>
+              <li style="display: flex; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--color-border);">
+                <span style="font-family: var(--font-display); font-size: 11px; font-weight: 600; color: var(--violet-600); background: var(--violet-50); border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">2</span>
+                <span><strong>Space.</strong> I moved the badge off the name and onto the avatar itself, as a consistent corner icon. That freed up the width the name needed, so longer employee names fit in the card without wrapping or truncating.</span>
+              </li>
+              <li style="display: flex; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--color-border);">
+                <span style="font-family: var(--font-display); font-size: 11px; font-weight: 600; color: var(--violet-600); background: var(--violet-50); border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">3</span>
+                <span><strong>Shape, not just color.</strong> In usability testing, a solid gray dot next to a solid green dot still read as ambiguous, since both simply looked "filled," just in different colors. After two rounds of testing, I replaced the solid gray fill with an open ring, a gray outline with an empty center, so managers could tell on premise from off premise by shape as well as color, at a glance instead of on close inspection.</span>
+              </li>
+              <li style="display: flex; gap: 12px; padding: 11px 0;">
+                <span style="font-family: var(--font-display); font-size: 11px; font-weight: 600; color: var(--violet-600); background: var(--violet-50); border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">4</span>
+                <span><strong>Warmth.</strong> I also kept every avatar circular rather than square. Contour bias research (Bar & Neta, 2006) shows people read sharp, angular contours as threat cues and rounded contours as safer — the right association for a tool centered on an employee's wellbeing.</span>
+              </li>
+            </ol>
+          </div>
+          <div class="decision-art">
+            <img src="/src/assets/Notifications/home_page.png" alt="Engage home page showing avatar status badges" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Decision 2 -->
+      <div class="decision-block">
+        <div class="decision-inner">
+          <div class="decision-copy">
+            <div class="decision-idx">Decision 02</div>
+            <h3>Give urgent warnings their own spot instead of sharing one with status</h3>
+            <p>In the old design, a warning icon sometimes took over the exact spot normally used for the online status dot. A leader could see someone was at risk, or that they were online, but never both at once, because the two signals were fighting for the same pixel. I gave warnings a dedicated position, a small flag in the corner of the card, so status and urgency can both be visible at the same time.</p>
+          </div>
+          <div class="decision-art" style="padding: 24px; display: block;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+              <img src="/src/assets/Notifications/warning.png" alt="Warning flag moved to its own corner on the engagement card" style="width: 100%; height: auto; display: block; border: 1px solid var(--color-border); border-radius: 6px;" />
+              <img src="/src/assets/Notifications/17.png" alt="Warning flag moved to its own corner on the schedule risk list" style="width: 100%; height: auto; display: block; border: 1px solid var(--color-border); border-radius: 6px;" />
+            </div>
+            <img src="/src/assets/Notifications/18.png" alt="Warning flag moved to its own column in the employee table" style="width: 100%; height: auto; display: block; border: 1px solid var(--color-border); border-radius: 6px;" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05: THE SOLUTION -->
+    <section class="section gsap-fade">
+      <p class="eyebrow">05: The Solution</p>
+      <h2>The same patterns, used consistently across three surfaces</h2>
+      <p style="margin-bottom: 28px;">Once the patterns were redesigned, I applied them everywhere Engage already used status and risk signals, rather than fixing them only in the place that prompted the project.</p>
+
+      <div style="margin-bottom: 24px;">
+        <img src="/src/assets/Notifications/fullpage.png" alt="Engage Home and Employee detail pages showing the final notification patterns" style="width: 100%; height: auto; display: block; border: 1px solid var(--color-border); border-radius: 6px;" />
+      </div>
+
+      <ol style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0;">
+        <li style="display: flex; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--color-border);">
+          <span style="font-family: var(--font-display); font-size: 11px; font-weight: 600; color: var(--violet-600); background: var(--violet-50); border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">1</span>
+          <span style="font-size: 13px; line-height: 1.55;"><strong style="color: var(--color-text-primary); font-weight: 500;">My engagement list (Home page)</strong>: The cards leaders check first now carry the avatar status badge and, where relevant, a separate corner flag for schedule risk, so both signals are visible without crowding each other.</span>
+        </li>
+        <li style="display: flex; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--color-border);">
+          <span style="font-family: var(--font-display); font-size: 11px; font-weight: 600; color: var(--violet-600); background: var(--violet-50); border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">2</span>
+          <span style="font-size: 13px; line-height: 1.55;"><strong style="color: var(--color-text-primary); font-weight: 500;">Employee detail page</strong>: The standalone "On premise" text line is gone. Presence now lives as the same badge used everywhere else, and a flagged risk surfaces as a page level warning with a link to see details, worded rather than only colored.</span>
+        </li>
+        <li style="display: flex; gap: 12px; padding: 11px 0;">
+          <span style="font-family: var(--font-display); font-size: 11px; font-weight: 600; color: var(--violet-600); background: var(--violet-50); border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">3</span>
+          <span style="font-size: 13px; line-height: 1.55;"><strong style="color: var(--color-text-primary); font-weight: 500;">Employee table (Home page)</strong>: Rows with a schedule risk get a light background tint in addition to the icon and the words "Schedule risk," so the row still reads clearly if a leader is scanning quickly or using a screen magnifier.</span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 06: OUTCOMES -->
+    <section class="section gsap-fade" style="border-bottom: none;">
+      <p class="eyebrow">06: Outcomes</p>
+      <div class="outcome-section">
+        <h2>HR leaders across North America and the EU called out the new warning treatment by name</h2>
+        <p style="max-width: 560px;">The response after launch came from HR leaders in the regions most affected by the old patterns, and from leadership overseeing the org.</p>
+        <div class="outcome-grid">
+          <div class="outcome-card">
+            <div class="outcome-num">200+</div>
+            <div class="outcome-desc">fulfillment centers worldwide now running the updated notification patterns</div>
+          </div>
+          <div class="outcome-card">
+            <div class="outcome-num">4</div>
+            <div class="outcome-desc">notification patterns rebuilt end to end to meet international accessibility standards</div>
+          </div>
+        </div>
+
+        <div style="margin-top: 28px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1);">
+          <p style="color: var(--green-100); font-size: 14px; line-height: 1.65; max-width: 640px; margin-bottom: 20px;">The reaction from HR leaders in North America and the EU, and from the Director of the org, was overwhelmingly positive. The changes were proposed to Amazon's Worldwide Org design library, for teams beyond Engage to adopt.</p>
+          <div class="quote-block" style="background: rgba(255,255,255,0.05); border-left-color: var(--neon-400);">
+            <p class="quote-text" style="color: var(--green-50);">"I love the new warning icon treatment. It's really easy to spot tasks that need urgent attention."</p>
+            <p class="quote-attr" style="color: var(--green-100);">HR Leader, post launch feedback</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07: LEARNINGS -->
+    <section class="section gsap-fade" style="border-bottom: none;">
+      <p class="eyebrow">07: What I Learned</p>
+      <h2>Clarity and over communication mattered more than any single screen</h2>
+      <p style="max-width: 600px; margin-bottom: 32px;">This project touched systems and teams beyond Engage itself, and that scale is what shaped what I took away from it.</p>
+
+      <div class="learn-grid">
+        <div class="learn-card">
+          <div class="learn-title">Over communicate when many systems and teams are involved</div>
+          <div class="learn-body">Clarity and over communication were crucial on this project specifically because the changes touched multiple systems and teams at once. A fix that looked simple on one screen had ripple effects everywhere else the same pattern was reused, and keeping every team aligned on that took more repetition than I expected.</div>
+        </div>
+        <div class="learn-card">
+          <div class="learn-title">Learn to communicate value so others advocate for it</div>
+          <div class="learn-body">Getting this proposed into Amazon's Worldwide Org design library meant the work had to be understood by people who never used Engage directly. I learned strategies for communicating the value of a decision clearly enough that other people could advocate for it in rooms I was not in.</div>
+        </div>
+      </div>
+
+      <p class="metric-note" style="margin-top: 40px; margin-bottom: 16px;">More detail on the design decisions and research is available upon request.</p>
+      <div class="next-wrap">
+        <a href="/amazon-followup/" class="next-btn">Next project →</a>
+      </div>
+    </section>
+
+  </div>
+
+  <div id="site-footer"></div>
+
+</body>
+</html>

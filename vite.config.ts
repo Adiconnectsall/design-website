@@ -16,6 +16,7 @@ export default defineConfig({
         carRental: resolve(__dirname, 'car-rental/index.html'),
         designSystem: resolve(__dirname, 'design-system-case-study/index.html'),
         amazonFollowup: resolve(__dirname, 'amazon-followup/index.html'),
+        amazonNotifications: resolve(__dirname, 'amazon-notifications/index.html'),
         aircredit: resolve(__dirname, 'aircredit/index.html'),
         searchWidget: resolve(__dirname, 'search-widget/index.html'),
       },

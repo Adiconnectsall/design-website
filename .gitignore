@@ -28,3 +28,6 @@ dist-ssr
 /experiment-3
 /src/pages/home-experiment.ts
 /src/pages/experiment-3.ts
+
+# Raw source slides, not part of the live site
+/Notifications
