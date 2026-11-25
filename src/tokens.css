@@ -97,6 +97,14 @@
   --content-narrow:    720px;
   --grid-gap:          var(--space-3);
 
+  /* section rhythm: every divider between two stacked sections pairs
+     --section-gap on each side; --page-edge is only for the very top
+     of the first section and the very bottom of the last one */
+  --section-gap:         72px;
+  --page-edge:           96px;
+  --section-gap-mobile:  56px;
+  --page-edge-mobile:    64px;
+
   /* case-study layout tokens */
   --max-w:       820px;
   --radius:      10px;

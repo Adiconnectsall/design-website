@@ -139,7 +139,7 @@ body {
 }
 
 /* ── Hero (case study pages) ────────────────────────────────────────── */
-.hero { padding: 80px 0 72px; }
+.hero { padding: var(--page-edge) 0 var(--section-gap); }
 .hero h1 { max-width: 640px; margin-bottom: 18px; }
 .hero-sub {
   font-size: 16px;
@@ -158,7 +158,7 @@ body {
 }
 
 /* ── Section ────────────────────────────────────────────────────────── */
-.section { padding: 72px 0; border-bottom: 1px solid var(--color-border); }
+.section { padding: var(--section-gap) 0; border-bottom: 1px solid var(--color-border); }
 .section:last-of-type { border-bottom: none; }
 
 /* ── Image placeholder ─────────────────────────────────────────────── */
@@ -404,7 +404,7 @@ body {
    HOME PAGE — hero, case cards, contact
    ========================================================================== */
 
-.home-hero { padding: 96px 0; border-bottom: 1px solid var(--color-border); }
+.home-hero { padding: var(--page-edge) 0 var(--section-gap); border-bottom: 1px solid var(--color-border); }
 
 .hero-avail {
   display: inline-flex; align-items: center; gap: 8px;
@@ -457,7 +457,7 @@ body {
 .hero-note { font-size: 12px; color: var(--color-text-muted); }
 
 /* Case studies grid */
-.cases { padding: 72px 0; border-bottom: 1px solid var(--color-border); }
+.cases { padding: var(--section-gap) 0; border-bottom: 1px solid var(--color-border); }
 .cases-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .card-featured { grid-column: 1 / -1; }
 
@@ -522,7 +522,7 @@ body {
 .case-card:hover .card-cta { background: var(--warm-50); border-color: var(--warm-400); }
 
 /* Contact */
-.contact { padding: 96px 0 88px; }
+.contact { padding: var(--section-gap) 0 var(--page-edge); }
 .contact-inner { max-width: 560px; }
 .contact-hl {
   font-family: var(--font-display);
@@ -566,8 +566,11 @@ body {
   .process-wrap, .outcome-section { padding: 32px 24px; }
   .cases-grid { grid-template-columns: 1fr; }
   .card-featured { grid-column: 1; }
-  .home-hero { padding: 64px 0 64px; }
-  .contact { padding: 64px 0 64px; }
+  .hero { padding: var(--page-edge-mobile) 0 var(--section-gap-mobile); }
+  .section { padding: var(--section-gap-mobile) 0; }
+  .home-hero { padding: var(--page-edge-mobile) 0 var(--section-gap-mobile); }
+  .cases { padding: var(--section-gap-mobile) 0; }
+  .contact { padding: var(--section-gap-mobile) 0 var(--page-edge-mobile); }
 }
 @media (max-width: 400px) {
   .metric-grid { grid-template-columns: 1fr; }
