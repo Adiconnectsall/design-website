@@ -139,7 +139,7 @@ body {
 }
 
 /* ── Hero (case study pages) ────────────────────────────────────────── */
-.hero { padding: 80px 0 56px; }
+.hero { padding: 80px 0 72px; }
 .hero h1 { max-width: 640px; margin-bottom: 18px; }
 .hero-sub {
   font-size: 16px;
@@ -404,7 +404,7 @@ body {
    HOME PAGE — hero, case cards, contact
    ========================================================================== */
 
-.home-hero { padding: 96px 0 88px; border-bottom: 1px solid var(--color-border); }
+.home-hero { padding: 96px 0; border-bottom: 1px solid var(--color-border); }
 
 .hero-avail {
   display: inline-flex; align-items: center; gap: 8px;
